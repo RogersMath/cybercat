@@ -1,4 +1,4 @@
-
+//sonantx.js
 // Oscillators
 function osc_sin (value) {
   return Math.sin(value * Math.PI * 2)
@@ -358,3 +358,5 @@ export async function generateSong (song, sampleRate) {
   const buf = await audioCtx.startRendering()
   return buf
 }
+
+export { MusicGenerator };
